@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Clone</title>
     <link rel="stylesheet" href="Spocify.css">
+    <link rel="stylesheet" href="Uitility.css">
 </head>
 <body>
-    <div class="left  .border"> </div>
-    <div class="right .border"> </div>
+    <div class="container flex bg-black">
+        <div class="left  border bg-black"> 
+            <div class="home bg-grey m-1 rounded">
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="Home"> Home</li>
+                    <li><img class="invert" src="Search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-black bg-grey m-1 rounded"></div>
+        </div>
+        <div class="right border"> </div>
+    </div>
 </body>
 </html>

@@ -1,9 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     /* background-color: black;
     color: white; */
-}
-.border{
-    border: 2px solid red;
 }
 
 .left{
@@ -11,4 +12,16 @@ body{
 }
 .right{
     width: 75vw;
+}
+.home{
+    padding: 10px; 
+}
+
+.home ul li{
+    display: flex;
+    align-items: center;
+    width: 20px;
+    list-style: none;
+    gap: 15px;
+    margin-bottom: 14px;
 }
