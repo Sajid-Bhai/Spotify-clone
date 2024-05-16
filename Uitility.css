@@ -31,3 +31,7 @@
 .rounded{
     border-radius: 12px;
 }
+
+.p-1{
+    padding: 10px;
+}
