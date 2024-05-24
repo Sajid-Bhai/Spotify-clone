@@ -5,23 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="stylesheet" href="Spocify.css">
-    <link rel="stylesheet" href="Uitility.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="CSS/Spocify.css">
+    <link rel="stylesheet" href="CSS/Uitility.css">
 </head>
 
 <body>
     <div class="container flex bg-black">
         <div class="left  border bg-black">
+            <div class="close">
+                <img width="30px" class="invert" src="img/close.svg" alt="">
+            </div>
             <div class="home bg-grey p-1 rounded">
                 <ul>
-                    <li><img class="invert" src="home.svg" alt="Home"> Home</li>
-                    <li><img class="invert" src="Search.svg" alt="Search">Search</li>
+                    <li><img class="invert" src="img/home.svg" alt="Home"> Home</li>
+                    <li><img class="invert" src="img/Search.svg" alt="Search">Search</li>
                 </ul>
             </div>
             <div class="library bg-black bg-grey p-1 rounded">
                 <div class="heading">
-                    <img class="invert" src="playlist.svg" alt="libraryIcon">
+                    <img class="invert" src="img/playlist.svg" alt="libraryIcon">
                     <h2>Your library</h2>
+                </div>
+                <div class="songList">
+                    <ul>
+                        <li>
+                            <img class="invert" src="img/music.svg" alt="musicLogo">
+                            <div class="info">
+                                <div>Song Name</div>
+                                <div>Song Artist</div>
+                            </div>
+                            <div class="playNow">
+                                <span>Play Now</span>
+                                <img class="invert" src="img/play.svg" alt="playLogo">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer">
                     <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
@@ -37,9 +56,11 @@
         <div style="margin-left: 0;" class="right border rounded bg-grey ">
             <div class="header">
                 <div class="nav">
-                    <img class="invert" src="LeftArrow.svg" alt="LeftArrow" />
-                    <img class="invert" src="RightArrow.svg" alt="RightArrow" />
-
+                    <div class="hamburgerContainer">
+                        <img id="hamburger" class="invert hamburger" src="img/hamburger.svg" alt="hamburger Logo" />
+                        <img class="invert" src="img/LeftArrow.svg" alt="LeftArrow" />
+                        <img class="invert" src="img/RightArrow.svg" alt="RightArrow" />
+                    </div>
                 </div>
                 <div class="button">
                     <button class="signupbtn">Sign up</button>
@@ -53,7 +74,8 @@
                         <div class="play">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                                 xmlns="http:// www.w3.org/2000/svg">
-                                <path d="M5 20V4L19 12L5 20Z" stroke="#141834" fill="#000" stroke-width="1.5" stroke-linejoin="round" />
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141834" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
                             </svg>
                         </div>
                         <img src="https://i.scdn.co/image/ab67706f0000000269d67d30bc3788ec7a05f4eb" alt="pic">
@@ -74,17 +96,32 @@
                     </div>
                 </div>
                 <div class="playbar">
-                    <div class="songinfo"></div>
-                    <div class="songbuttons">
-                        <img src="presong.svg" alt="Previous song"/>
-                        <img src="play.svg" alt="Play song"/>
-                        <img src="nextsong.svg" alt="Next song"/>
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
                     </div>
-                    <div class="songtime"></div>
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+                        <div class="songbuttons">
+                            <img id="previous" src="img/presong.svg" alt="Previous song" />
+                            <img id="play" src="img/play.svg" alt="Play song" />
+                            <img id="next" src="img/nextsong.svg" alt="Next song" />
+                        </div>
+                        <div class="timeval">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <img src="img/volume.svg" alt="volume logo">
+                                <div class="range">
+                                    <input type="range" name="volume" id="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <script src="Spotify.js"></script>
+        <script src="JS/Spotify.js"></script>
 </body>
 
 </html>
