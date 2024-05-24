@@ -1,1 +1,0 @@
-console.log("Now we start Java Script code");
