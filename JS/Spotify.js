@@ -1,5 +1,5 @@
 // list of songs 
-let ary = ['Arash feat Helena  One Night In Dubai Official Video.mp3', 'Let Me Down Slowly  Tommy and Grace  Peaky Blinders.mp3', 'Maine Royaan  Official Music Video  Tanveer Evan.mp3','Arash feat Helena  One Night In Dubai Official Video.mp3', 'Let Me Down Slowly  Tommy and Grace  Peaky Blinders.mp3', 'Maine Royaan  Official Music Video  Tanveer Evan.mp3','Arash feat Helena  One Night In Dubai Official Video.mp3', 'Let Me Down Slowly  Tommy and Grace  Peaky Blinders.mp3', 'y2mate.com - Maine Royaan  Official Music Video  Tanveer Evan.mp3'];
+let ary = ['songs/Arash feat Helena  One Night In Dubai Official Video.mp3', 'songs/Let Me Down Slowly  Tommy and Grace  Peaky Blinders.mp3', 'songs/Maine Royaan  Official Music Video  Tanveer Evan.mp3','songs/Arash feat Helena  One Night In Dubai Official Video.mp3', 'songs/Let Me Down Slowly  Tommy and Grace  Peaky Blinders.mp3', 'songs/Maine Royaan  Official Music Video  Tanveer Evan.mp3','songs/Arash feat Helena  One Night In Dubai Official Video.mp3', 'songs/Let Me Down Slowly  Tommy and Grace  Peaky Blinders.mp3', 'songs/Maine Royaan  Official Music Video  Tanveer Evan.mp3'];
 let crtAuido=new Audio();
 let play=document.querySelector("#play");
 
@@ -14,7 +14,7 @@ function playMusic(track, pause=false){
 	document.querySelector(".songinfo").innerHTML=track.replaceAll("%20", " ");
 	document.querySelector(".songtime").innerHTML="00:00 / 00:00";
 }
-playMusic("Arash feat Helena  One Night In Dubai Official Video.mp3",true);
+playMusic("song/Arash feat Helena  One Night In Dubai Official Video.mp3",true);
 
 
 let songUl = document.querySelector(".songList").getElementsByTagName("ul")[0];
